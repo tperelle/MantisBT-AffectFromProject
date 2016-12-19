@@ -1,20 +1,24 @@
 ﻿<?php
+
+# Copyright (c) 2016 Thomas Perelle
+# Licensed under the GPL-3.0 license
+
 class AffectFromProjectPlugin extends MantisPlugin {
     
 	// Register plugin in core
 	function register() {
-        $this->name = 'AffectFromProject';    	# Proper name of plugin
-		$this->description = 'Permet d\'indiquer un utilisateur par projet pour réaliser une assignation automatique des tickets';    # Short description of the plugin			
-        $this->page = '';           			# Default plugin page
+        $this->name = plugin_lang_get('title'); 			# Proper name of plugin
+		$this->description = plugin_lang_get('description');# Short description of the plugin			
+        $this->page = '';           						# Default plugin page
 
-        $this->version = '1.0';     			# Plugin version string
-        $this->requires = array(    			# Plugin dependencies, array of basename => version pairs
-            'MantisCore' => '1.3.0',  			# Should always depend on an appropriate version of MantisBT
+        $this->version = '1.0';     						# Plugin version string
+        $this->requires = array(    						# Plugin dependencies, array of basename => version pairs
+            'MantisCore' => '1.3.0',  						# Should always depend on an appropriate version of MantisBT
             );
 
-        $this->author = 'Thomas Perelle';       # Author/team name
-        $this->contact = 'thomas@perelle.com';  # Author/team e-mail address
-        $this->url = '';            			# Support webpage
+        $this->author = 'Thomas Perelle';       			# Author/team name
+        $this->contact = 'thomas@perelle.com';  			# Author/team e-mail address
+        $this->url = 'https://github.com/tperelle/MantisBT-AffectFromProject';  # Support webpage
     }
 	
 	// Update database schema for plugin needs	
@@ -67,7 +71,7 @@ class AffectFromProjectPlugin extends MantisPlugin {
 		$t_user_count = count( $t_users );
 		
 		echo '<div class="field-container">';
-			echo '<label for="project-affectation"><span>Assignation</span></label>';
+			echo '<label for="project-affectation"><span>'.plugin_lang_get('field_label').'</span></label>';
 			echo '<span class="select">';
 				echo '<select id="project-affectation" name="affectation">';
 					echo '<option value="undefined" '.$undefine_selected.' > </option>';
