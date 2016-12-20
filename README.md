@@ -8,3 +8,6 @@ Copy AffectFromProject catalogue to mantisbt plugin directory.
 
 ## Features
 Add a field in project creation and update page to set up the user to which bugs will be auto assign.
+
+## Compatibility
+Tested with MantisCore 1.3.0 to 1.3.4
