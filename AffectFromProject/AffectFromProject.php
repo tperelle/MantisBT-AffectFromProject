@@ -11,9 +11,9 @@ class AffectFromProjectPlugin extends MantisPlugin {
 		$this->description = plugin_lang_get('description');# Short description of the plugin			
         $this->page = '';           						# Default plugin page
 
-        $this->version = '1.0';     						# Plugin version string
-        $this->requires = array(    						# Plugin dependencies, array of basename => version pairs
-            'MantisCore' => '1.3.0',  						# Should always depend on an appropriate version of MantisBT
+        $this->version = '1.0';     					# Plugin version string
+        $this->requires = array(    					# Plugin dependencies, array of basename => version pairs
+            'MantisCore' => '1.3.0, <= 1.3.4',  			# Should always depend on an appropriate version of MantisBT
             );
 
         $this->author = 'Thomas Perelle';       			# Author/team name
