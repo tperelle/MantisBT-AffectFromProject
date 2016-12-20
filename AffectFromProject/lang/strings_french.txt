@@ -6,4 +6,4 @@
 $s_plugin_AffectFromProject_ = '';
 $s_plugin_AffectFromProject_title = 'AffectFromProject';
 $s_plugin_AffectFromProject_description = 'Permet d\'indiquer un utilisateur par projet pour réaliser une assignation automatique des tickets';
-$s_plugin_AffectFromProject_field_label = 'Assignation auto';
+$s_plugin_AffectFromProject_field_label = 'Assigné à';
