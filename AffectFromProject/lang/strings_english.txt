@@ -1,2 +1,9 @@
 <?php
 
+# Copyright (c) 2016 Thomas Perelle
+# Licensed under the GPL-3.0 license
+
+$s_plugin_AffectFromProject_ = '';
+$s_plugin_AffectFromProject_title = 'AffectFromProject';
+$s_plugin_AffectFromProject_description = 'Allows to indicate a user per project to realize an automatic issue assignment';
+$s_plugin_AffectFromProject_field_label = 'Assign issues to';
