@@ -7,8 +7,8 @@ class AffectFromProjectPlugin extends MantisPlugin {
     
 	// Register plugin in core
 	function register() {
-        $this->name = plugin_lang_get('title'); 			# Proper name of plugin
-		$this->description = plugin_lang_get('description');# Short description of the plugin			
+        $this->name = 'AffectFromProject'; 			# Proper name of plugin
+		$this->description = 'Permet d\'indiquer un utilisateur par projet pour réaliser une assignation automatique des tickets';# Short description of the plugin			
         $this->page = '';           						# Default plugin page
 
         $this->version = '1.0';     					# Plugin version string
@@ -71,7 +71,7 @@ class AffectFromProjectPlugin extends MantisPlugin {
 		$t_user_count = count( $t_users );
 		
 		echo '<div class="field-container">';
-			echo '<label for="project-affectation"><span>'.plugin_lang_get('field_label').'</span></label>';
+			echo '<label for="project-affectation"><span>'.'Assigné à'.'</span></label>';
 			echo '<span class="select">';
 				echo '<select id="project-affectation" name="affectation">';
 					echo '<option value="undefined" '.$undefine_selected.' > </option>';
